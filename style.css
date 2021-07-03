@@ -1,0 +1,73 @@
+.left-nav > i::after{
+    content: "";
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+}
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(94, 94, 94);
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
+main{
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "side sec sec sec sec sec sec"; */
+    height: calc(100vh - 3rem);
+    display: flex;
+}
+section{
+    /* grid-area: sec; */
+    flex-basis: 85%;
+}
+.sidebar{
+    /* grid-area: side; */
+    flex-basis: 15%;
+}
+.box1 .box-content .graph::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    border-radius: .375rem;
+    height: 100%;
+    background: rgb(128, 0, 219);
+}
+.box2 .box-content .graph::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56%;
+    border-radius: .375rem;
+    height: 100%;
+    background: rgb(46, 1, 78);
+}
+.box3 .box-content .graph::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 78%;
+    border-radius: .375rem;
+    height: 100%;
+    background: rgb(145, 20, 20);
+}
+.box4 .box-content .graph::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21%;
+    border-radius: .375rem;
+    height: 100%;
+    background: rgb(52, 55, 56);
+}
