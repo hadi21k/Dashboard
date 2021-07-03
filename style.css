@@ -1,12 +1,6 @@
-.left-nav > i::after{
-    content: "";
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: red;
-    position: absolute;
-    top: 10px;
-    right: 7px;
+/* Basics */
+html{
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
     width: 2px;
@@ -17,11 +11,26 @@
 ::-webkit-scrollbar-track{
     background-color: rgb(255, 255, 255);
 }
+
+.left-nav > i::after{
+    content: "";
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+}
 main{
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "side sec sec sec sec sec sec"; */
     height: calc(100vh - 3rem);
     display: flex;
+    position: absolute;
+    width: 100%;
+    transition: all 1s;
+    top: 3rem;
 }
 section{
     /* grid-area: sec; */
@@ -70,4 +79,25 @@ section{
     border-radius: .375rem;
     height: 100%;
     background: rgb(52, 55, 56);
+}
+.option-menu{
+    position: absolute;
+    top: -150%;
+    left: 0;
+    width: 100%;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.option-menu a{
+    border-bottom: 1px solid gray;
+}
+.active{
+    position: absolute;
+    top: 3rem;
+}
+.set{
+    position: absolute;
+    top: 50%;
 }
