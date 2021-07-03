@@ -16,8 +16,7 @@
 
 <body>
     <!-- Button -->
-
-    <header class="bg-gray-800 bg-opacity-100 flex items-center justify-between h-12">
+    <header class="z-20 bg-gray-800 bg-opacity-100 flex items-center justify-between h-12">
         <div class="right-nav flex items-center">
             <div class="logo">
                 <h1 class="text-white font-bold text-2xl px-4">Motion</h1>
@@ -28,17 +27,69 @@
         </div>
         <div class="left-nav flex items-center mr-4">
             <i class="fa fa-bell text-red py-3 px-4 relative text-2xl text-white"></i>
-            <div class="img px-2 md:block hidden">
+            <div class="img px-2 lg:block hidden">
                 <img src="img/Screenshot_20201206_205528.jpg" class="rounded-full w-7 h-7">
             </div>
-            <div class="option md:hidden">
+            <div class="option lg:hidden cursor-pointer">
                 <i class="fas fa-align-justify text-2xl text-white"></i>
             </div>
         </div>
     </header>
+    <div class="option-menu lg:flex lg:flex-col hidden mb-3">
+        <a href="#" class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
+                <defs></defs>
+                <path
+                    d="M428 224H288a48 48 0 01-48-48V36a4 4 0 00-4-4h-92a64 64 0 00-64 64v320a64 64 0 0064 64h224a64 64 0 0064-64V228a4 4 0 00-4-4zm-92 160H176a16 16 0 010-32h160a16 16 0 010 32zm0-80H176a16 16 0 010-32h160a16 16 0 010 32z"
+                    fill="currentColor"></path>
+                <path
+                    d="M419.22 188.59L275.41 44.78a2 2 0 00-3.41 1.41V176a16 16 0 0016 16h129.81a2 2 0 001.41-3.41z"
+                    fill="currentColor"></path>
+            </svg>
+            <span>Dashboard</span>
+        </a>
+        <a href="#" class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Resources</span>
+        </a>
+        <a href="#" class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 24 24">
+                <defs></defs>
+                <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" fill="currentColor"></path>
+                <circle cx="8.5" cy="7" r="4" fill="currentColor"></circle>
+                <path d="M17 11l2 2 4-4" fill="currentColor"></path>
+            </svg>
+            <span>Leads</span>
+        </a>
+        <a href="#" class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            <svg class="w-4 mr-2 text-gray-500" viewBox="0 0 24 24">
+                <defs></defs>
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" fill="currentColor"></path>
+                <circle cx="9" cy="7" r="4" fill="currentColor"></circle>
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75" fill="currentColor"></path>
+            </svg>
+            <span>Customers</span>
+        </a>
+        <a href="#" class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+        <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
+            <defs></defs>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96"></path>
+        </svg>
+        <span>Sales orders</span>
+        </a>
+        <a href="#" class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
+                <defs></defs>
+                <path d="M256 176a80 80 0 1080 80 80.24 80.24 0 00-80-80zm172.72 80a165.53 165.53 0 01-1.64 22.34l48.69 38.12a11.59 11.59 0 012.63 14.78l-46.06 79.52a11.64 11.64 0 01-14.14 4.93l-57.25-23a176.56 176.56 0 01-38.82 22.67l-8.56 60.78a11.93 11.93 0 01-11.51 9.86h-92.12a12 12 0 01-11.51-9.53l-8.56-60.78A169.3 169.3 0 01151.05 393L93.8 416a11.64 11.64 0 01-14.14-4.92L33.6 331.57a11.59 11.59 0 012.63-14.78l48.69-38.12A174.58 174.58 0 0183.28 256a165.53 165.53 0 011.64-22.34l-48.69-38.12a11.59 11.59 0 01-2.63-14.78l46.06-79.52a11.64 11.64 0 0114.14-4.93l57.25 23a176.56 176.56 0 0138.82-22.67l8.56-60.78A11.93 11.93 0 01209.94 26h92.12a12 12 0 0111.51 9.53l8.56 60.78A169.3 169.3 0 01361 119l57.2-23a11.64 11.64 0 0114.14 4.92l46.06 79.52a11.59 11.59 0 01-2.63 14.78l-48.69 38.12a174.58 174.58 0 011.64 22.66z" fill="currentColor"></path>
+            </svg>
+            <span>Settings</span>
+        </a>
+    </div>
     <!-- Main -->
     <main>
-        <div class="sidebar md:flex md:flex-col hidden bg-gray-200">
+        <div class="sidebar lg:flex lg:flex-col hidden bg-gray-200">
             <a href="#" class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
                 <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
                     <defs></defs>
@@ -90,7 +141,7 @@
                 <span>Settings</span>
             </a>
         </div>
-        <section class="md:m-0 m-auto">
+        <section class="lg:m-0 m-auto">
             <div class="sec-title p-4 text-2xl text-black font-light border-b-2 border-gray-200">
                 <h1>Dashboard</h1>
             </div>
@@ -152,13 +203,13 @@
                     </div>
                 </div>
             </div>
-            <div class="app p-5 grid md:grid-cols-2 gap-4">
+            <div class="app p-5 grid lg:grid-cols-2 gap-4">
                 <div class="tasks">
                     <div class="tasks-title mb-4">
                         <h3 class="text-gray-700 font-medium text-2xl">Add New Task</h3>
                     </div>
                     <div class="add-tasks">
-                        <input class="border-2 py-3 px-2 w-full rounded-3xl mb-3" type="text" placeholder="Add a Task">
+                        <input class="border-2 bg-gray-800 py-3 px-4 text-white w-full rounded-3xl mb-3" type="text" placeholder="Add a Task">
                     </div>
                     <div class="task-btn p-2">
                         <div class="add-btn space-y-4 md:flex md:items-center md:space-x-5 md:flex-row">
@@ -319,6 +370,7 @@
             </div>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
