@@ -15,30 +15,29 @@
 </head>
 
 <body>
-    <!-- Button -->
-    <header class="z-20 bg-gray-800 bg-opacity-100 flex items-center justify-between h-12">
-        <div class="right-nav flex items-center">
+    <header class="z-20 flex items-center justify-between h-12 bg-gray-800 bg-opacity-100">
+        <div class="flex items-center right-nav">
             <div class="logo">
-                <h1 class="text-white font-bold text-2xl px-4">Motion</h1>
+                <h1 class="px-4 text-2xl font-bold text-white">Motion</h1>
             </div>
-            <div class="search-bar md:block hidden">
-                <input type="search" name="search" class="border-0 px-2 py-1 rounded-3xl bg-gray-700"
+            <div class="hidden search-bar md:block">
+                <input type="search" name="search" class="px-2 py-1 bg-gray-700 border-0 rounded-3xl"
                     placeholder="Search">
             </div>
         </div>
-        <div class="left-nav flex items-center mr-4">
-            <i class="fa fa-bell text-red py-3 px-4 relative text-2xl text-white"></i>
-            <div class="img px-2 lg:block hidden">
+        <div class="flex items-center mr-4 left-nav">
+            <i class="relative px-4 py-3 text-2xl text-white cursor-pointer fa fa-bell text-red"></i>
+            <div class="hidden px-2 img lg:block">
                 <img src="img/Screenshot_20201206_205528.jpg" class="rounded-full w-7 h-7">
             </div>
-            <div class="option lg:hidden cursor-pointer">
-                <i class="fas fa-align-justify text-2xl text-white"></i>
+            <div class="cursor-pointer option lg:hidden">
+                <i class="text-2xl text-white fas fa-align-justify"></i>
             </div>
         </div>
     </header>
-    <div class="option-menu lg:flex lg:flex-col hidden mb-3">
+    <div class="hidden mb-3 option-menu lg:flex lg:flex-col">
         <a href="#"
-            class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            class="flex items-center px-2 py-4 font-bold text-gray-900 transition-all duration-700 hover:bg-gray-400">
             <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
                 <defs></defs>
                 <path
@@ -50,15 +49,15 @@
             <span>Dashboard</span>
         </a>
         <a href="#"
-            class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24"
+            class="flex items-center px-2 py-4 font-bold text-gray-900 transition-all duration-700 hover:bg-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
             </svg>
             <span>Resources</span>
         </a>
         <a href="#"
-            class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            class="flex items-center px-2 py-4 font-bold text-gray-900 transition-all duration-700 hover:bg-gray-400">
             <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 24 24">
                 <defs></defs>
                 <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" fill="currentColor"></path>
@@ -68,7 +67,7 @@
             <span>Leads</span>
         </a>
         <a href="#"
-            class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            class="flex items-center px-2 py-4 font-bold text-gray-900 transition-all duration-700 hover:bg-gray-400">
             <svg class="w-4 mr-2 text-gray-500" viewBox="0 0 24 24">
                 <defs></defs>
                 <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" fill="currentColor"></path>
@@ -78,7 +77,7 @@
             <span>Customers</span>
         </a>
         <a href="#"
-            class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            class="flex items-center px-2 py-4 font-bold text-gray-900 transition-all duration-700 hover:bg-gray-400">
             <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
                 <defs></defs>
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
@@ -87,7 +86,7 @@
             <span>Sales orders</span>
         </a>
         <a href="#"
-            class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
+            class="flex items-center px-2 py-4 font-bold text-gray-900 transition-all duration-700 hover:bg-gray-400">
             <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
                 <defs></defs>
                 <path
@@ -99,10 +98,11 @@
     </div>
     <!-- Main -->
     <main>
-        <div class="sidebar lg:flex lg:flex-col hidden bg-gray-200">
+        <!-- Sidebar -->
+        <div class="hidden h-screen bg-gray-800 sidebar lg:flex lg:flex-col">
             <a href="#"
-                class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
-                <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
+                class="flex items-center px-2 py-4 font-bold text-white transition-all duration-700 hover:bg-gray-400">
+                <svg class="w-4 h-4 mr-2 text-white" viewBox="0 0 512 512">
                     <defs></defs>
                     <path
                         d="M428 224H288a48 48 0 01-48-48V36a4 4 0 00-4-4h-92a64 64 0 00-64 64v320a64 64 0 0064 64h224a64 64 0 0064-64V228a4 4 0 00-4-4zm-92 160H176a16 16 0 010-32h160a16 16 0 010 32zm0-80H176a16 16 0 010-32h160a16 16 0 010 32z"
@@ -114,16 +114,16 @@
                 <span>Dashboard</span>
             </a>
             <a href="#"
-                class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-gray-500" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
+                class="flex items-center px-2 py-4 font-bold text-white transition-all duration-700 hover:bg-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Resources</span>
             </a>
             <a href="#"
-                class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
-                <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 24 24">
+                class="flex items-center px-2 py-4 font-bold text-white transition-all duration-700 hover:bg-gray-400">
+                <svg class="w-4 h-4 mr-2 text-white" viewBox="0 0 24 24">
                     <defs></defs>
                     <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" fill="currentColor"></path>
                     <circle cx="8.5" cy="7" r="4" fill="currentColor"></circle>
@@ -132,8 +132,8 @@
                 <span>Leads</span>
             </a>
             <a href="#"
-                class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
-                <svg class="w-4 mr-2 text-gray-500" viewBox="0 0 24 24">
+                class="flex items-center px-2 py-4 font-bold text-white transition-all duration-700 hover:bg-gray-400">
+                <svg class="w-4 mr-2 text-white" viewBox="0 0 24 24">
                     <defs></defs>
                     <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" fill="currentColor"></path>
                     <circle cx="9" cy="7" r="4" fill="currentColor"></circle>
@@ -142,8 +142,8 @@
                 <span>Customers</span>
             </a>
             <a href="#"
-                class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
-                <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
+                class="flex items-center px-2 py-4 font-bold text-white transition-all duration-700 hover:bg-gray-400">
+                <svg class="w-4 h-4 mr-2 text-white" viewBox="0 0 512 512">
                     <defs></defs>
                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="32" d="M416 128L192 384l-96-96"></path>
@@ -151,8 +151,8 @@
                 <span>Sales orders</span>
             </a>
             <a href="#"
-                class="flex items-center hover:bg-gray-400 transition-all py-4 px-2 duration-700 text-gray-900 font-bold">
-                <svg class="w-4 h-4 mr-2 text-gray-500" viewBox="0 0 512 512">
+                class="flex items-center px-2 py-4 font-bold text-white transition-all duration-700 hover:bg-gray-400">
+                <svg class="w-4 h-4 mr-2 text-white" viewBox="0 0 512 512">
                     <defs></defs>
                     <path
                         d="M256 176a80 80 0 1080 80 80.24 80.24 0 00-80-80zm172.72 80a165.53 165.53 0 01-1.64 22.34l48.69 38.12a11.59 11.59 0 012.63 14.78l-46.06 79.52a11.64 11.64 0 01-14.14 4.93l-57.25-23a176.56 176.56 0 01-38.82 22.67l-8.56 60.78a11.93 11.93 0 01-11.51 9.86h-92.12a12 12 0 01-11.51-9.53l-8.56-60.78A169.3 169.3 0 01151.05 393L93.8 416a11.64 11.64 0 01-14.14-4.92L33.6 331.57a11.59 11.59 0 012.63-14.78l48.69-38.12A174.58 174.58 0 0183.28 256a165.53 165.53 0 011.64-22.34l-48.69-38.12a11.59 11.59 0 01-2.63-14.78l46.06-79.52a11.64 11.64 0 0114.14-4.93l57.25 23a176.56 176.56 0 0138.82-22.67l8.56-60.78A11.93 11.93 0 01209.94 26h92.12a12 12 0 0111.51 9.53l8.56 60.78A169.3 169.3 0 01361 119l57.2-23a11.64 11.64 0 0114.14 4.92l46.06 79.52a11.59 11.59 0 01-2.63 14.78l-48.69 38.12a174.58 174.58 0 011.64 22.66z"
@@ -161,96 +161,101 @@
                 <span>Settings</span>
             </a>
         </div>
-        <section class="lg:m-0 m-auto">
-            <div class="sec-title p-4 text-2xl text-black font-light border-b-2 border-gray-200">
+        <!-- Section -->
+        <section class="m-auto section lg:m-0">
+            <div class="p-4 text-2xl font-light text-black border-b-2 border-gray-200 sec-title">
                 <h1>Dashboard</h1>
             </div>
-            <div class="boxes p-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+            <div class="grid grid-cols-1 gap-4 p-8 boxes lg:grid-cols-4 md:grid-cols-2">
                 <!-- 1 -->
-                <div class="box1 shadow-xl rounded-sm border-2 border-gray-300 bg-white p-4">
-                    <div class="box-title mb-2">
-                        <h5 class="text-black font-thin text-sm">Today's Orders</h5>
+                <div class="p-4 bg-gray-800 border-2 border-gray-300 rounded-sm shadow-xl box1">
+                    <div class="mb-2 box-title">
+                        <h5 class="text-sm font-thin text-white">Today's Orders</h5>
                     </div>
                     <div class="box-content">
-                        <p class="text-gray-400 font-thin">2500$</p>
-                        <div class="graph w-full h-3 bg-gray-400 relative mt-2 rounded-md"></div>
-                        <div class="num flex w-full items-center justify-between text-gray-400 text-sm">
+                        <p class="font-thin text-white">2500$</p>
+                        <div class="relative w-full h-3 mt-2 bg-gray-400 rounded-md graph"></div>
+                        <div class="flex items-center justify-between w-full text-sm text-gray-400 num">
                             <div>15%</div>
                             <div>$25,000</div>
                         </div>
                     </div>
                 </div>
                 <!-- 2 -->
-                <div class="box2 shadow-xl rounded-sm border-2 border-indigo-700 bg-white p-4 bg-indigo-700">
-                    <div class="box-title mb-2">
-                        <h5 class="text-white font-thin text-sm">Today's Orders</h5>
+                <div class="p-4 text-white bg-gray-800 border-2 border-gray-300 rounded-sm shadow-xl box2">
+                    <div class="mb-2 box-title">
+                        <h5 class="text-sm font-thin text-white">Today's Orders</h5>
                     </div>
                     <div class="box-content">
-                        <p class="text-white font-thin">2500$</p>
-                        <div class="graph w-full h-3 bg-gray-400 relative mt-2 rounded-md"></div>
-                        <div class="num flex w-full items-center justify-between text-indigo-300 text-sm">
+                        <p class="font-thin text-white">4600$</p>
+                        <div class="relative w-full h-3 mt-2 bg-gray-400 rounded-md graph"></div>
+                        <div class="flex items-center justify-between w-full text-sm text-white num">
                             <div>56%</div>
                             <div>$25,000</div>
                         </div>
                     </div>
                 </div>
                 <!-- 3 -->
-                <div class="box3 shadow-xl rounded-sm border-2 border-red-500 bg-white p-4 bg-red-500">
-                    <div class="box-title mb-2">
-                        <h5 class="text-white font-thin text-sm">Today's Orders</h5>
+                <div class="p-4 bg-gray-800 border-2 border-gray-300 rounded-sm shadow-xl box3">
+                    <div class="mb-2 box-title">
+                        <h5 class="text-sm font-thin text-white">Today's Orders</h5>
                     </div>
                     <div class="box-content">
-                        <p class="text-white font-thin">2500$</p>
-                        <div class="graph w-full h-3 bg-gray-400 relative mt-2 rounded-md"></div>
-                        <div class="num flex w-full items-center justify-between text-white text-sm">
+                        <p class="font-thin text-white">10000$</p>
+                        <div class="relative w-full h-3 mt-2 bg-gray-400 rounded-md graph"></div>
+                        <div class="flex items-center justify-between w-full text-sm text-white num">
                             <div>78%</div>
                             <div>$25,000</div>
                         </div>
                     </div>
                 </div>
                 <!-- 4 -->
-                <div class="box4 shadow-xl rounded-sm border-2 border-gray-900 bg-white p-4 bg-gray-900">
-                    <div class="box-title mb-2">
-                        <h5 class="text-white font-thin text-sm">Today's Orders</h5>
+                <div class="p-4 bg-gray-800 border-2 border-gray-300 rounded-sm shadow-xl white box4">
+                    <div class="mb-2 box-title">
+                        <h5 class="text-sm font-thin text-white">Today's Orders</h5>
                     </div>
                     <div class="box-content">
-                        <p class="text-white font-thin">2500$</p>
-                        <div class="graph w-full h-3 bg-gray-400 relative mt-2 rounded-md"></div>
-                        <div class="num flex w-full items-center justify-between text-white text-sm">
-                            <div>21%</div>
+                        <p class="font-thin text-white">7750$</p>
+                        <div class="relative w-full h-3 mt-2 bg-gray-400 rounded-md graph"></div>
+                        <div class="flex items-center justify-between w-full text-sm text-white num">
+                            <div>37%</div>
                             <div>$25,000</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="app p-5 grid lg:grid-cols-2 gap-4">
+            <div class="grid gap-4 p-5 app lg:grid-cols-2">
                 <div class="tasks">
-                    <div class="tasks-title mb-4">
-                        <h3 class="text-gray-700 font-medium text-2xl">Add New Task</h3>
+                    <div class="mb-4 tasks-title">
+                        <h3 class="text-2xl font-medium text-gray-700">Add New Task</h3>
                     </div>
                     <div class="add-tasks">
-                        <input class="border-2 bg-gray-800 py-3 px-4 text-white w-full rounded-3xl mb-3" type="text"
-                            placeholder="Add a Task">
+                        <input class="taskss w-full px-4 py-3 mb-3 text-white bg-gray-800 border-2 rounded-3xl"
+                            type="text" placeholder="Add a Task">
                     </div>
-                    <div class="task-btn p-2">
-                        <div class="add-btn space-y-4 md:flex md:items-center md:space-x-5 md:flex-row">
-                            <button class="bg-indigo-700 p-2 rounded-3xl text-white font-medium">Add New Task</button>
-                            <p class="text-sm text-gray-400 underline font-medium">View all Tasks</p>
+                    <div class="p-2 task-btn">
+                        <div class="space-y-4 add-btn md:flex md:items-center md:space-x-5 md:flex-row">
+                            <button class="p-2 task-button font-medium text-white bg-indigo-700 rounded-3xl">Add New
+                                Task</button>
+                            <p class="text-sm delete-all font-medium text-gray-400 underline cursor-pointer">Delete all
+                                Tasks</p>
                         </div>
                     </div>
-                    <div class="task-content mt-3">
+                    <ul class="display-tasks p-2">
+                    </ul>
+                    <div class="mt-3 task-content">
                         <!-- 1 -->
-                        <div class="cont-1 flex items-center border-2 border-gray-400 p-2 space-x-4 rounded-t-xl">
+                        <div class="flex items-center p-2 space-x-4 border-2 border-gray-400 cont-1 rounded-t-xl">
                             <div class="acc rounded-full bg-blue-500 p-1.5 text-white font-thin">
                                 <h3>HD</h3>
                             </div>
                             <div class="content">
-                                <div class="cont-title flex items-center space-x-3">
-                                    <h2 class="text-gray-600 font-medium">UI Release v1.2</h2>
+                                <div class="flex items-center space-x-3 cont-title">
+                                    <h2 class="font-medium text-gray-600">UI Release v1.2</h2>
                                     <p class="rounded-xl bg-green-500 px-1.5 text-sm py-0.5 text-white font-medium">
                                         Release</p>
                                 </div>
-                                <div class="name flex items-center mt-1 space-x-4">
+                                <div class="flex items-center mt-1 space-x-4 name">
                                     <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                     <p class="text-sm text-gray-400"> 3 minutes ago</p>
                                 </div>
@@ -258,51 +263,51 @@
                         </div>
                         <!-- 2 -->
                         <div
-                            class="cont-1 flex items-center border-b-2 border-r-2 border-l-2 border-gray-400 p-2 space-x-4">
+                            class="flex items-center p-2 space-x-4 border-b-2 border-l-2 border-r-2 border-gray-400 cont-1">
                             <div class="acc rounded-full bg-blue-500 p-1.5 text-white font-thin">
                                 <h3>HD</h3>
                             </div>
                             <div class="content">
-                                <div class="cont-title flex items-center space-x-3">
-                                    <h2 class="text-gray-600 font-medium">IOS app v0.6</h2>
+                                <div class="flex items-center space-x-3 cont-title">
+                                    <h2 class="font-medium text-gray-600">IOS app v0.6</h2>
                                     <p class="rounded-xl bg-red-500 px-1.5 text-sm py-0.5 text-white font-medium">Bug
                                     </p>
                                 </div>
-                                <div class="name flex items-center mt-1 space-x-4">
+                                <div class="flex items-center mt-1 space-x-4 name">
                                     <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                     <p class="text-sm text-gray-400"> 3 minutes ago</p>
                                 </div>
                             </div>
                         </div>
                         <!-- 3 -->
-                        <div class="cont-1 flex items-center border-r-2 border-l-2 border-gray-400 p-2 space-x-4">
+                        <div class="flex items-center p-2 space-x-4 border-l-2 border-r-2 border-gray-400 cont-1">
                             <div class="acc rounded-full bg-blue-500 p-1.5 text-white font-thin">
                                 <h3>HD</h3>
                             </div>
                             <div class="content">
-                                <div class="cont-title flex items-center space-x-3">
-                                    <h2 class="text-gray-600 font-medium">UX Release v1.2</h2>
+                                <div class="flex items-center space-x-3 cont-title">
+                                    <h2 class="font-medium text-gray-600">UX Release v1.2</h2>
                                     <p class="rounded-xl bg-green-500 px-1.5 text-sm py-0.5 text-white font-medium">
                                         Release</p>
                                 </div>
-                                <div class="name flex items-center mt-1 space-x-4">
+                                <div class="flex items-center mt-1 space-x-4 name">
                                     <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                     <p class="text-sm text-gray-400"> 3 minutes ago</p>
                                 </div>
                             </div>
                         </div>
                         <!-- 4 -->
-                        <div class="cont-1 flex items-center border-2 border-gray-400 p-2 space-x-4 rounded-b-xl">
+                        <div class="flex items-center p-2 space-x-4 border-2 border-gray-400 cont-1 rounded-b-xl">
                             <div class="acc rounded-full bg-blue-500 p-1.5 text-white font-thin">
                                 <h3>HD</h3>
                             </div>
                             <div class="content">
-                                <div class="cont-title flex items-center space-x-3">
-                                    <h2 class="text-gray-600 font-medium">Android v3.7</h2>
+                                <div class="flex items-center space-x-3 cont-title">
+                                    <h2 class="font-medium text-gray-600">Android v3.7</h2>
                                     <p class="rounded-xl bg-gray-600 px-1.5 text-sm py-0.5 text-white font-medium">
                                         Maintenance</p>
                                 </div>
-                                <div class="name flex items-center mt-1 space-x-4">
+                                <div class="flex items-center mt-1 space-x-4 name">
                                     <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                     <p class="text-sm text-gray-400"> 3 minutes ago</p>
                                 </div>
@@ -311,82 +316,82 @@
                     </div>
                 </div>
                 <div class="users">
-                    <div class="tasks-title mb-4">
-                        <h3 class="text-gray-700 font-medium text-2xl">Latest users</h3>
+                    <div class="mb-4 tasks-title">
+                        <h3 class="text-2xl font-medium text-gray-700">Latest users</h3>
                     </div>
                     <!-- 1 -->
-                    <div class="user flex items-center space-x-4 border-2 border-gray-400 p-2 rounded-t-xl ">
-                        <div class="acc rounded-full bg-pink-500 p-1 text-white font-thin">
+                    <div class="flex items-center p-2 space-x-4 border-2 border-gray-400 user rounded-t-xl ">
+                        <div class="p-1 font-thin text-white bg-pink-500 rounded-full acc">
                             <h3>HD</h3>
                         </div>
                         <div class="acc-content">
-                            <h2 class="text-gray-600 font-medium">Apply new changes</h2>
-                            <div class="name flex items-center mt-1 space-x-4">
+                            <h2 class="font-medium text-gray-600">Apply new changes</h2>
+                            <div class="flex items-center mt-1 space-x-4 name">
                                 <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                 <p class="text-sm text-gray-400"> 3 minutes ago</p>
                             </div>
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="user flex items-center space-x-4 border-r-2 border-b-2 border-l-2 border-gray-400 p-2">
-                        <div class="acc rounded-full bg-pink-500 p-1 text-white font-thin">
+                    <div class="flex items-center p-2 space-x-4 border-b-2 border-l-2 border-r-2 border-gray-400 user">
+                        <div class="p-1 font-thin text-white bg-pink-500 rounded-full acc">
                             <h3>HD</h3>
                         </div>
                         <div class="acc-content">
-                            <h2 class="text-gray-600 font-medium">Apply new changes</h2>
-                            <div class="name flex items-center mt-1 space-x-4">
+                            <h2 class="font-medium text-gray-600">Apply new changes</h2>
+                            <div class="flex items-center mt-1 space-x-4 name">
                                 <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                 <p class="text-sm text-gray-400"> 3 minutes ago</p>
                             </div>
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div class="user flex items-center space-x-4 border-r-2 border-b-2 border-l-2 border-gray-400 p-2 ">
-                        <div class="acc rounded-full bg-pink-500 p-1 text-white font-thin">
+                    <div class="flex items-center p-2 space-x-4 border-b-2 border-l-2 border-r-2 border-gray-400 user ">
+                        <div class="p-1 font-thin text-white bg-pink-500 rounded-full acc">
                             <h3>HD</h3>
                         </div>
                         <div class="acc-content">
-                            <h2 class="text-gray-600 font-medium">Apply new changes</h2>
-                            <div class="name flex items-center mt-1 space-x-4">
+                            <h2 class="font-medium text-gray-600">Apply new changes</h2>
+                            <div class="flex items-center mt-1 space-x-4 name">
                                 <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                 <p class="text-sm text-gray-400"> 3 minutes ago</p>
                             </div>
                         </div>
                     </div>
                     <!-- 4 -->
-                    <div class="user flex items-center space-x-4 border-r-2 border-b-2 border-l-2 border-gray-400 p-2 ">
-                        <div class="acc rounded-full bg-pink-500 p-1 text-white font-thin">
+                    <div class="flex items-center p-2 space-x-4 border-b-2 border-l-2 border-r-2 border-gray-400 user ">
+                        <div class="p-1 font-thin text-white bg-pink-500 rounded-full acc">
                             <h3>HD</h3>
                         </div>
                         <div class="acc-content">
-                            <h2 class="text-gray-600 font-medium">Apply new changes</h2>
-                            <div class="name flex items-center mt-1 space-x-4">
+                            <h2 class="font-medium text-gray-600">Apply new changes</h2>
+                            <div class="flex items-center mt-1 space-x-4 name">
                                 <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                 <p class="text-sm text-gray-400"> 3 minutes ago</p>
                             </div>
                         </div>
                     </div>
                     <!-- 5 -->
-                    <div class="user flex items-center space-x-4 border-r-2 border-l-2 border-gray-400 p-2 ">
-                        <div class="acc rounded-full bg-pink-500 p-1 text-white font-thin">
+                    <div class="flex items-center p-2 space-x-4 border-l-2 border-r-2 border-gray-400 user ">
+                        <div class="p-1 font-thin text-white bg-pink-500 rounded-full acc">
                             <h3>HD</h3>
                         </div>
                         <div class="acc-content">
-                            <h2 class="text-gray-600 font-medium">Apply new changes</h2>
-                            <div class="name flex items-center mt-1 space-x-4">
+                            <h2 class="font-medium text-gray-600">Apply new changes</h2>
+                            <div class="flex items-center mt-1 space-x-4 name">
                                 <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                 <p class="text-sm text-gray-400"> 3 minutes ago</p>
                             </div>
                         </div>
                     </div>
                     <!-- 6 -->
-                    <div class="user flex items-center space-x-4 border-2 border-gray-400 p-2 rounded-b-xl ">
-                        <div class="acc rounded-full bg-pink-500 p-1 text-white font-thin">
+                    <div class="flex items-center p-2 border-2 border-gray-400 s-pace-x-4 user rounded-b-xl ">
+                        <div class="p-1 font-thin text-white bg-pink-500 rounded-full acc">
                             <h3>HD</h3>
                         </div>
                         <div class="acc-content">
-                            <h2 class="text-gray-600 font-medium">Apply new changes</h2>
-                            <div class="name flex items-center mt-1 space-x-4">
+                            <h2 class="font-medium text-gray-600">Apply new changes</h2>
+                            <div class="flex items-center mt-1 space-x-4 name">
                                 <p class="text-sm text-gray-400"> Hadi Dyeb </p>
                                 <p class="text-sm text-gray-400"> 3 minutes ago</p>
                             </div>
