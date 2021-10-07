@@ -1,2 +1,2 @@
 # Dashboard
-Dashboard with TailwindCss
+Dashboard with TailwindCSS
